@@ -1,0 +1,263 @@
+@charset "UTF-8";
+@import url('https://fonts.cdnfonts.com/css/poppins');
+
+:root {
+    --verde: #2b580c;
+    --marrom: #8c2f39;
+    --branco: #fff;
+    --preto: #000;
+
+    --fonte: 'Poppins', sans-serif;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    border: 0;
+    box-sizing: border-box;
+    font-family: var(--fonte);
+    list-style: none;
+    text-decoration: none;
+}
+
+body {
+    width: 100%;
+    height: 100%;
+    overflow-x: hidden;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.container header {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1.5rem 0;
+    background: var(--marrom);
+}
+
+.container header .navbar {
+    width: 80%;
+}
+
+
+.container header .navbar ul {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.container header .navbar ul li a {
+    color: var(--branco);
+    transition: .2s ease-in-out;
+}
+
+.container header .navbar ul li a:hover {
+    text-decoration: underline;
+}
+
+.container main {
+    width: 75%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    gap: 2rem;
+}
+
+.container main .introducao {
+    padding: 2.7rem;
+    display: flex;
+    justify-content: space-between;
+}
+
+.container main .introducao .logo {
+    width: 40%;
+}
+
+.container main .introducao .logo img {
+    width: 100%;
+}
+
+.container main .introducao .texto {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 1rem;
+}
+
+.container main .introducao .texto h1 {
+    font-size: 3rem;
+    color: var(--marrom);
+}
+
+.container main .introducao .texto p {
+    font-size: 1.1rem;
+}
+
+.container main hr {
+    border: 3px solid var(--preto);
+    opacity: 20%;
+    border-radius: 2rem;
+    width: 50%;
+}
+
+.container main .plantas {
+    padding: 2.7rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+}
+
+.container main .plantas .texto {
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    align-items: center;
+}
+
+.container main .plantas .texto p {
+    text-align: center;
+}
+
+.container main .plantas .texto h1 {
+    color: var(--marrom);
+    font-size: 2.2rem;
+}
+
+.container main .plantas .texto p {
+    font-size: 1.1rem;
+}
+
+.container main .plantas .imagens {
+    width: 90%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.container main .plantas .imagens .fruta {
+    width: 250px;
+    height: 250px;
+    border: 5px solid var(--verde);
+    border-radius: 50%;
+    overflow: hidden;
+    -webkit-box-shadow: 0px 2px 14px 0px rgba(0,0,0,0.75);
+    -moz-box-shadow: 0px 2px 14px 0px rgba(0,0,0,0.75);
+    box-shadow: 0px 2px 14px 0px rgba(0,0,0,0.75);
+}
+
+.container main .plantas .imagens .fruta img {
+    width: 100%;
+    height: 100%;
+    filter: brightness(75%);
+}
+
+.container main .historia {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    background: var(--verde);
+    width: 100vw;
+    padding: 2.7rem;
+}
+
+.container main .historia .texto {
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 1rem;
+    color: var(--branco);
+}
+
+.container main .historia .texto h1 {
+    font-size: 2rem;
+}
+
+.container main .historia .historia-img {
+    width: 400px;
+    -webkit-box-shadow: 0px 2px 14px 0px rgba(0,0,0,0.75);
+    -moz-box-shadow: 0px 2px 14px 0px rgba(0,0,0,0.75);
+    box-shadow: 0px 2px 14px 0px rgba(0,0,0,0.75);
+    border: 2px solid var(--branco);
+    border-radius: 2rem;
+    overflow: hidden;
+}
+
+.container main .historia .historia-img img {
+    width: 100%;
+}
+
+.container footer {
+    width: 100%;
+    background: var(--marrom);
+    color: var(--branco);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1.5rem;
+}
+
+.container main .sus-res {
+    padding: 2.7rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.container main .sus-res h1 {
+    font-size: 2.5rem;
+    color: var(--marrom);
+    text-align: center;
+}
+
+.container main .sus-res .content-sus-res {
+    display: flex;
+    justify-content: space-between;
+}
+
+.container main .sus-res .content-sus-res .linha {
+    border: 2px solid var(--preto);
+    border-radius: 1rem;
+    opacity: 20%;
+    height: 600px;
+}
+
+.container main .sus-res .content-sus-res .texto {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    gap: 0.5rem;
+    align-items: center;    
+    width: 45%;
+}
+
+.container main .sus-res .content-sus-res .texto h2 {
+    color: var(--marrom);
+}
+
+.container main .sus-res .content-sus-res .texto p {
+    text-align: center;
+}
+
+.container main .sus-res .content-sus-res .texto .sus-res-img {
+    width: 500px;
+    overflow: hidden;
+    border: 5px solid var(--verde);
+    border-radius: 2rem;
+}
+
+.container main .sus-res .content-sus-res .texto .sus-res-img img {
+    width: 100%;
+    height: 100%;
+    filter: brightness(95%);
+}
